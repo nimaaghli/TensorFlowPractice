@@ -475,6 +475,7 @@ with graph.as_default():
     logits_4 = tf.matmul(relu_layer_3, weights_4) + biases_4
     relu_layer_4 = tf.nn.dropout(tf.nn.relu(logits_4), hidden_layer_4_keep_prob)
 
+
     out = tf.matmul(relu_layer_4, weights_5) + biases_5
     loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=out, labels=tf_train_labels))
     # loss += (beta_1 * tf.nn.l2_loss(weights_1) +
