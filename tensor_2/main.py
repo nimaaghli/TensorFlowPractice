@@ -415,7 +415,7 @@ def accuracy(predictions, labels):
 #     #saver.save(session, '/Users/nimaaghli/PycharmProjects/tensor_2/my_test_model.ckpt')
 
 
-##Fully connect with 3 hidden layers with dropout 96.4 and learning rate decey
+##Fully connect with 3 hidden layers with dropout 96.5 and learning rate decey
 num_nodes_1 = 3048
 num_nodes_2 = 2048
 num_nodes_3 = 1024
