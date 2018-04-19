@@ -415,12 +415,12 @@ def accuracy(predictions, labels):
 #     #saver.save(session, '/Users/nimaaghli/PycharmProjects/tensor_2/my_test_model.ckpt')
 
 
-##Fully connect with 3 hidden layers with dropout 96.5 and learning rate decey
+##Fully connect with 3 hidden layers with dropout 96.4 and learning rate decey
 num_nodes_1 = 3048
 num_nodes_2 = 2048
 num_nodes_3 = 1024
 num_nodes_4 = 500
-batch_size = 180
+batch_size = 250
 
 hidden_layer_1_keep_prob = 0.5
 hidden_layer_2_keep_prob = 0.6
@@ -431,12 +431,12 @@ beta_2 = 1e-5
 beta_3 = 1e-5
 beta_4 = 1e-5
 
-hidden_layer_1_stddev = np.sqrt(3.0/784)
-hidden_layer_2_stddev = np.sqrt(3.0/num_nodes_1)
-hidden_layer_3_stddev = np.sqrt(3.0/num_nodes_2)
-hidden_layer_4_stddev = np.sqrt(3.0/num_nodes_3)
+hidden_layer_1_stddev = np.sqrt(2.0/784)
+hidden_layer_2_stddev = np.sqrt(2.0/num_nodes_1)
+hidden_layer_3_stddev = np.sqrt(2.0/num_nodes_2)
+hidden_layer_4_stddev = np.sqrt(2.0/num_nodes_3)
 output_layer_stddev = np.sqrt(2.0/num_nodes_4)
-
+print(hidden_layer_1_stddev,hidden_layer_2_stddev,hidden_layer_3_stddev,hidden_layer_4_stddev)
 graph = tf.Graph()
 with graph.as_default():
     # Input data. For the training data, we use a placeholder that will be fed
