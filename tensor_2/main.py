@@ -431,11 +431,11 @@ beta_2 = 1e-5
 beta_3 = 1e-5
 beta_4 = 1e-5
 
-hidden_layer_1_stddev = np.sqrt(2.0/784)
-hidden_layer_2_stddev = np.sqrt(2.0/num_nodes_1)
-hidden_layer_3_stddev = np.sqrt(2.0/num_nodes_2)
-hidden_layer_4_stddev = np.sqrt(2.0/num_nodes_3)
-output_layer_stddev = np.sqrt(2.0/num_nodes_4)
+hidden_layer_1_stddev = np.sqrt(5.5/784)
+hidden_layer_2_stddev = np.sqrt(3.5/(num_nodes_1+784))
+hidden_layer_3_stddev = np.sqrt(2.5/(num_nodes_2+num_nodes_1))
+hidden_layer_4_stddev = np.sqrt(1.5/(num_nodes_3+num_nodes_2))
+output_layer_stddev = np.sqrt(0.5/(num_nodes_4+num_nodes_3))
 print(hidden_layer_1_stddev,hidden_layer_2_stddev,hidden_layer_3_stddev,hidden_layer_4_stddev)
 graph = tf.Graph()
 with graph.as_default():
