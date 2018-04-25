@@ -85,7 +85,7 @@ final_image_size = output_size_no_pool(image_size, patch_size, padding='same', c
 print(final_image_size)
 
 patch_size = 5
-batch_size = 100
+batch_size = 50
 # Depth is the number of output channels
 # On the other hand, num_channels is the number of input channels set at 1 previously
 depth = 16
