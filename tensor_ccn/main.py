@@ -189,7 +189,7 @@ batch_size = 16
 # Depth is the number of output channels
 # On the other hand, num_channels is the number of input channels set at 1 previously
 depth = 16
-num_hidden = 64
+num_hidden = 256
 
 graph = tf.Graph()
 
