@@ -307,10 +307,10 @@ def accuracy(predictions, labels):
 # beta_3 = 1e-5
 # beta_4 = 1e-5
 #
-# hidden_layer_1_stddev = np.sqrt(3.0/784)
-# hidden_layer_2_stddev = np.sqrt(2.0/num_nodes_1)
-# hidden_layer_3_stddev = np.sqrt(1.0/num_nodes_2)
-# output_layer_stddev = np.sqrt(2.0/num_nodes_3)
+    # hidden_layer_1_stddev = np.sqrt(3.0/784)
+    # hidden_layer_2_stddev = np.sqrt(2.0/num_nodes_1)
+    # hidden_layer_3_stddev = np.sqrt(1.0/num_nodes_2)
+    # output_layer_stddev = np.sqrt(2.0/num_nodes_3)
 #
 # graph = tf.Graph()
 # with graph.as_default():
