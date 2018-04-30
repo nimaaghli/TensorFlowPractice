@@ -15,7 +15,7 @@ from skimage import io
 pickle_file = 'notMNIST.pickle'
 
 with open(pickle_file, 'rb') as f:
-    save = pickle.load(f, encoding='latin1')
+    save = pickle.load(f) #,encoding='latin1'
     train_dataset = save['train_dataset']
     train_labels = save['train_labels']
     valid_dataset = save['valid_dataset']
