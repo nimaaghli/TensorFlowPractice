@@ -28,7 +28,6 @@ with open(pickle_file, 'rb') as f:
     print('Test set', test_dataset.shape, test_labels.shape)
 
 
-
 plt.imshow(test_dataset[233], cmap='gray')
 #io.imsave('test_6.png',test_dataset[233])
 #plt.show()
